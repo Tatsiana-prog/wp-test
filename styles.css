@@ -1,0 +1,456 @@
+@font-face {
+  font-family: "Jost", sans-serif;
+  src: url("fonts/Jost/Jost-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base Styles */
+:root {
+  --background-color: #F6F6F6;
+   --dark-color: #1a2a36;
+  --light-color: #f7f9fc;
+ }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  color: var(--dark-color);
+  line-height: 1.6;
+  background-color: var(--light-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  padding: 50px 32px 100px 32px;
+  background: var(--background-color);
+}
+
+.header {
+  position: fixed;
+  top:32px;
+  width: 1856px;
+  height: 121px;
+  background: white;
+  border-radius: 50px;
+  backdrop-filter: blur(12px);
+}
+
+.header-row{
+  display: flex;
+  font-family: "Jost", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+}
+.logo {
+  display: flex;
+  gap:43px;
+  font-family: "Jost", sans-serif;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header-items {
+  display: flex;
+  column-gap: 32px;
+}
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(314deg, #CDA966 0%, #E7BC6D 100%), linear-gradient(131deg, #EBBE9D 0%, #DFAB86 100%);
+  border-radius: 50%;
+}
+
+.header-item:nth-child(3) .icon {
+  width: 22px;
+  height: 22px;
+  background: #25D366;
+}
+
+.header-item:nth-child(4)  {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header-text {
+  color: black;
+  font-size: 14px;
+  font-family: Jost;
+  font-weight: 700;
+  line-height: 19.60px;
+  word-wrap: break-word;
+}
+
+.header-subtext {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.60px;
+  word-wrap: break-word;
+}
+
+button {
+  width: 149px;
+  height: 40px;
+  padding-top: 10px 22px;
+  background: linear-gradient(314deg, #CDA966 0%, #E7BC6D 100%);
+  border-radius: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  color: black;
+  border: none;
+  font-size: 14px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  word-wrap:break-word;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(314deg, #C3A670 0%, #E6C68C 100%);
+  box-shadow: 0px 0px 12px #E5B79A inset;
+}
+
+.section-description {
+  padding-top: 178px;
+}
+
+.description  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 101px 101px 50px 101px;
+  width: 100%;
+  height: 699px;
+  border-radius: 50px;
+  background: url(/images/bg-desc.png) no-repeat center;
+  background-size: cover;
+}
+
+.decsription-content {
+  width: 560px;
+  height: 100%;
+}
+
+.description-subtext {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.description-subtext:hover  img {
+ transform: scale(1.1);
+ transition: all 0.5s ease-in-out;
+}
+
+.description-subtext:hover  span {
+ color: #345D73;
+ transition: all 0.5s ease-in-out;
+ font-weight: 500;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color:#000;
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color:#000;
+}
+
+.description-raiting {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.raiting-box {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+
+.raiting-text {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.raiting-text p:first-child {
+   font-size: 30px;
+   line-height: 1;
+}
+
+.raiting-text:nth-last-of-type(2) {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.color-red {
+  color:red;
+}
+
+.section-holidays {
+  margin-top: -70px;
+}
+
+.holidays {
+  padding: 174px 30px 100px  101px;
+  top:-100px;
+  height: 1418px;
+  background: url(/images/holidays/holidays-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.holidays-content {
+  display: flex;
+  justify-content: space-between;
+  gap:55px;
+}
+
+.holidays-column {
+  width: 292px;
+}
+
+.holidays-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.holidays-item {
+  padding: 20px 35px;
+  display: flex;
+  gap:18.5px;
+  align-items: center;
+  width: 292px;
+  height: 86px;
+  background: linear-gradient(0deg, #F6F6F6 0%, #F6F6F6 100%), linear-gradient(140deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border-radius: 20px; border: 1px rgba(255, 255, 255, 0.26) solid;
+  backdrop-filter: blur(4px);
+}
+
+.holidays-boxes {
+  display: flex;
+  gap:40px;
+  flex-wrap: wrap;
+}
+
+.holidays-box {
+  position: relative;
+  display: flex;
+  gap:40px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.holidays-box:hover .box-title{
+    color:#E6C68C;
+}
+
+.box-title {
+  font-size: 24px;
+  position: absolute;
+  bottom:41px;
+  left: 30px;
+}
+
+.box-link {
+  position: absolute;
+  top:8px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #E7BC6D;
+  cursor: pointer;
+}
+
+.add-color {
+  color:#345D73;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.holidays-form {
+  margin-top: 100px;
+  position: relative;
+  padding: 51px 50px 27px 50px;
+  width: 1565px;
+  height: 283px;
+  border-radius: 32px;
+  background: url(/images/holidays/form-bg.png) no-repeat top;
+  background-size: cover;
+}
+
+.form-title {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 33px;
+}
+
+.form-wrapper {
+  margin-right: 0;
+  margin-left: auto;
+  width: 1040px;
+  height: 205px;
+}
+
+.form-row {
+  display: flex;
+  gap:20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 333px;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 1px 4px rgba(192.82, 202.77, 201.77, 0.21) inset;
+  border-radius: 7px;
+  border: 1px rgba(250.16, 250.16, 250.16, 0.17) solid;
+}
+
+.input {
+  padding: 18px;
+  width: 233px;
+  border: none;
+  outline: none;
+ }
+
+ .input:focus {
+    border: none;
+}
+
+.input-icon {
+  position: absolute;
+  left: 18px;
+  top:18px;
+}
+
+.input-icon::before {
+ content: "";
+ position: absolute;
+ right:-12px ;
+ width: 1px;
+ height: 24.50px;
+ background-color:#CBCBCB;
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 334px;
+  height: 70px;
+  background: linear-gradient(314deg, #CE9E45 0%, #FFE3AE 100%);
+  box-shadow: 0px 0px 12px #E5B79A inset;
+  color: white;
+  font-size: 14px;
+  font-family: Jost;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.btn-submit:hover {
+background: linear-gradient(314deg, #C3A670 0%, #E6C68C 100%);
+box-shadow: 0px 0px 12px #E5B79A inset
+}
+
+.custom-checkbox {
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  color:white;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #E7BC6D;
+  border-radius: 4px;
+  margin-right: 16.6px;
+  position: relative;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  background:url(/images/icons/icon-check.png) no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 99;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  opacity: 1;
+}
+
+.policy-link {
+  font-size: 12px;
+  color:#E7BC6D;
+  margin-left: 12px;
+}
+.img-holidays {
+  position: absolute;
+  left: -131px;
+  top: -134px;
+}
